@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Index</h1>
+    <header>
+        <nav>
+            <div id="searchbox">
+                <form role="search" action="" method="get">
+                    <input type="search" placeholder="Buscar...">
+                </form>
+            </div>
+
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Eventos</a></li>
+                <li><a href="">Crear Evento</a></li>
+                <li><a href="">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>
