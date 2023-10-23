@@ -1,28 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static "css/eventManager.css" %}" />
     <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <div id="searchbox">
-                <form role="search" action="" method="get">
-                    <input type="search" placeholder="Buscar...">
-                </form>
-            </div>
+  </head>
+  <body>
+    <nav>
+      <div id="searchbox">
+        <form role="search" action="" method="get">
+          <input class="inp_search" type="search" placeholder="Buscar..." />
+        </form>
+      </div>
 
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Eventos</a></li>
-                <li><a href="">Crear Evento</a></li>
-                <li><a href="">Perfil</a></li>
-            </ul>
-        </nav>
-    </header>
-    {% block content %}
-    {% endblock %}
-</body>
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Eventos</a></li>
+        <li><a href="">Crear Evento</a></li>
+        <li><a href="">Perfil</a></li>
+      </ul>
+    </nav>
+
+    {% block content %} {% endblock %}
+  </body>
 </html>

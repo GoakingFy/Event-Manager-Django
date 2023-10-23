@@ -1,0 +1,95 @@
+body{
+    background-color: #000214;
+}
+
+body::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    filter: blur(150px);
+    /* background-color: #8e0773a1; */
+    background-color: #f4177a8b;
+}
+
+body::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    filter: blur(150px);
+    background-color: #1d9fca7b;
+    /* background-color: #f4177a8b; */
+}
+
+
+
+nav{
+    margin: auto;
+    width: 800px;
+    background: #f4177a09;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(18.3px);
+    -webkit-backdrop-filter: blur(18.3px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0px 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #898989;
+    transition: color .3s ease;
+}
+
+nav ul li a:hover{
+    color: #fff;
+}
+
+form input{
+    width: 200px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #680934;
+    padding-left:40px ;
+    padding: 5px 5px 5px 40px;
+    border-radius: 50px;
+    color: #fff;
+    position: relative;
+   
+}
+form input:focus{
+    outline: none;
+    box-shadow: 0 0 10px #680934;
+}
+
+form::after{
+    content: "";
+    height: 1rem;
+    left: 1.6rem;
+    margin-top: -0.5rem;
+    position: absolute;
+    top: 50%;
+    width: 1rem;
+       
+   
+    background: url("data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwOWYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMSIgY3k9IjExIiByPSI4Ii8+PGxpbmUgeDE9IjIxIiB5MT0iMjEiIHgyPSIxNi42NSIgeTI9IjE2LjY1Ii8+PC9zdmc+")repeat;
+       
+}
