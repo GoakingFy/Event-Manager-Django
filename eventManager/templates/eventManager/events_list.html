@@ -1,3 +1,14 @@
 {% extends "eventManager/base.html" %} {% block content %}
-<h1>List events</h1>
+
+
+<div class="container_events">
+    {% for event in events %} 
+    <div class="card_event">
+        <h2>{{event.title}}</h2>
+        <p>{{event.description}}</p>
+        <p>Numero de participantes</p>
+    </div> 
+    {% endfor %} 
+    
+</div>
 {% endblock %}

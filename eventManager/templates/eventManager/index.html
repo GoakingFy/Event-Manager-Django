@@ -6,11 +6,12 @@
 </header>
 <main>
     <div class="container_box">
-        <a href="" class=" box_card box_events_list">
+        <a href="{% url 'events_list' %}" class=" box_card box_events_list">
             <h2>Ver Eventos 👀</h2>
             <p>Adentrate en el mundo de los eventos y  ¡Unente a uno!</p>
+            <sub>Eventos activos:</sub>
         </a>
-        <a href="" class="box_card box_create_events">
+        <a href="{% url 'create_events' %}" class="box_card box_create_events">
             <h2>Crear Eventos 📅</h2>
             <p>Adentrate en el mundo de los eventos y  ¡Unente a uno!</p>
         </a>

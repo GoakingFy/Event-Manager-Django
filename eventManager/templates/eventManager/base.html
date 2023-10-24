@@ -16,12 +16,22 @@
       </div>
 
       <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Eventos</a></li>
-        <li><a href="">Crear Evento</a></li>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="{% url 'events_list' %}">Eventos</a></li>
+        <li><a href="{% url 'create_events' %}">Crear Evento</a></li>
         <li><a href="">Perfil</a></li>
       </ul>
     </nav>
+
+    <div class="container_personal_info">
+      <button class="btn_menu_info" ><img src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></button>
+      <div class="container_info">
+        <a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-512.png" alt=""></a>
+      </div>
+      
+      
+    </div>
+    
 
     {% block content %} {% endblock %}
   </body>
