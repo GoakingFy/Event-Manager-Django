@@ -1,28 +1,27 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static "css/eventManager.css" %}" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav>
-      <div id="searchbox">
-        <form role="search" action="" method="get">
-          <input class="inp_search" type="search" placeholder="Buscar..." />
-        </form>
-      </div>
+{% extends "eventManager/base.html" %}
 
-      <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Eventos</a></li>
-        <li><a href="">Crear Evento</a></li>
-        <li><a href="">Perfil</a></li>
-      </ul>
-    </nav>
-
-    {% block content %} {% endblock %}
-  </body>
-</html>
+{% block content %}
+<header class="header-index">
+    <h1>Ejemplo de Header</h1>
+</header>
+<main>
+    <div class="container_box">
+        <a href="" class=" box_card box_events_list">
+            <h2>Ver Eventos 👀</h2>
+            <p>Adentrate en el mundo de los eventos y  ¡Unente a uno!</p>
+        </a>
+        <a href="" class="box_card box_create_events">
+            <h2>Crear Eventos 📅</h2>
+            <p>Adentrate en el mundo de los eventos y  ¡Unente a uno!</p>
+        </a>
+        <a href="" class="box_card box_events_top">
+            <h2>Eventos Top 🔥</h2>
+            <p>Adentrate en el mundo de los eventos y  ¡Unente a uno!</p>
+        </a>
+        <a href="" class="box_card box_perfil_user">
+            <h2>Ver Tu Perfil 👤</h2>
+            <p>Adentrate en el mundo de los eventos y  ¡Unente a uno!</p>
+        </a>
+    </div>
+</main>
+{% endblock %}
