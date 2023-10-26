@@ -1,10 +1,8 @@
-{% extends "eventManager/base.html" %}
-{% block content %} 
-    <h1 style="color: #fff;" >Crear evento</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{Event_form}}
-        <button type="submit" >Enviar</button>
-    </form>
-    
+{% extends "eventManager/base.html" %} {% block content %}
+<h1 style="color: #fff">Crear evento</h1>
+<form method="post" class="form_create_events">
+  {% csrf_token %} {{Event_form}}
+  <button type="submit">Enviar</button>
+</form>
+
 {% endblock %}
